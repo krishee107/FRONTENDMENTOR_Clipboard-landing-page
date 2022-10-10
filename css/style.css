@@ -103,8 +103,8 @@ section img {max-width: 100%;}
 .clipboard {margin-top: 40px;}
 
 /* -- Ico boxes */
-.supercharge_boxes {padding: 80px 0;}
-.supercharge_box {padding: 28px 0;}
+.supercharge_boxes {padding: 80px 0;flex-wrap: wrap;justify-content: space-around;}
+.supercharge_box {padding: 28px 0;max-width: 350px;}
 
 /* -- Footer -- */
 footer {
