@@ -159,7 +159,7 @@ ul.footer_links {
     .hero_img {display: block;margin-left: -50%;}
     
     .supercharge_boxes {display: flex;}
-    .supercharge_boxes {padding: 0 10px;align-items: center;}
+    .supercharge_boxes {padding: 30px 0px 50px;align-items: center;}
 
     .clients{display:flex;justify-content: space-evenly;flex-wrap: wrap;}
 
