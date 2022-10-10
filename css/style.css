@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+    --primary:hsl(171, 66%, 44%);
+    --primary2:hsl(233, 100%, 69%);
+
+    --neutral:hsl(210, 10%, 33%);
+    --neutral2:hsl(201, 11%, 66%);
+
+    --fs:18px;
+    --ff:'Bai Jamjuree', sans-serif;
+}
+
+html, body{
+    margin: 0;
+    width: 100vw;
+    background-image: url(../images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    font-family: var(--ff)
+}
+
+/* -- General -- */
+p {
+    color: var(--neutral2);
+    line-height: 26px;
+    text-align: center;
+}
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--neutral);
+}h3 {
+    color: var(--neutral);
+    font-size: 24px;
+    line-height: 30px;
+}
+/*Buttons*/
+.buttons{padding:20px 0}
+.download_button {
+    width: 90%;
+    max-width: 311px;
+    min-height: 56px;
+    margin: 0 auto;
+    border-radius: 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    display: grid;
+    align-items: center;
+    margin-bottom: 24px;
+    box-shadow: 0px 10px 20px rgba(137, 229, 199, 0.503305), inset 0px -3px 0px rgba(0, 0, 0, 0.151333);
+    border-radius: 28px;
+    cursor:pointer
+}
+
+
+.download_ios {background: var(--primary);}
+.download_mac {background-color: var(--primary2);}
+
+/* -- Header -- */
+main {display: flex;flex-direction: column;align-items: center;text-align: center;padding: 125px 32px 0 32px;}
+header {
+    margin-bottom: 20%;
+}
+header img {margin-bottom: 60px;}
+header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--neutral);
+    line-height: 40px;
+}
+
+/* Sections */
+section {padding: 30px 0;}
+section img {max-width: 100%;}
+.access {
+    padding-top: 130px;
+}.access img {
+    padding-top: 60px;
+}
+.clients {
+    display: grid;
+    gap: 60px;
+}
+
+.clipboard {margin-top: 40px;}
+
+/* -- Ico boxes */
+.supercharge_boxes {padding: 80px 0;}
+.supercharge_box {padding: 28px 0;}
+
+/* -- Footer -- */
+footer {
+    background: #9eabb20a;
+    mix-blend-mode: normal;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: var(--neutral);
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.135px;
+}
+.footer_logo img {max-width: 55px;}
+
+.footer_logo {padding: 52px 0 40px;}
+.footer_redes {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    cursor: pointer;
+}
