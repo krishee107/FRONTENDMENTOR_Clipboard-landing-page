@@ -16,6 +16,7 @@ html, body{
     width: 100vw;
     background-image: url(../images/bg-header-mobile.png);
     background-repeat: no-repeat;
+    background-size: contain;
     font-family: var(--ff)
 }
 
@@ -36,7 +37,7 @@ h2 {
     line-height: 30px;
 }
 /*Buttons*/
-.buttons{padding:20px 0}
+.buttons{padding:20px 0;}
 .download_button {
     width: 90%;
     max-width: 311px;
@@ -63,7 +64,7 @@ h2 {
 /* -- Header -- */
 main {display: flex;flex-direction: column;align-items: center;text-align: center;padding: 125px 32px 0 32px;}
 header {
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }
 header img {margin-bottom: 60px;}
 header h1 {
@@ -84,6 +85,11 @@ section img {max-width: 100%;}
 .clients {
     display: grid;
     gap: 60px;
+    align-items: center;
+}
+
+.clients {
+    min-width: 165px;
 }
 
 .clipboard {margin-top: 40px;}
@@ -108,9 +114,49 @@ footer {
 .footer_logo img {max-width: 55px;}
 
 .footer_logo {padding: 52px 0 40px;}
+ul.footer_links {
+    list-style: none;
+    padding: 0;
+}
 .footer_redes {
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
     cursor: pointer;
+}
+
+@media (min-width:375px) {
+    html {background-image: url(../images/bg-header-desktop.png);}
+    .buttons {display: flex;max-width: 450px;margin: 0 auto;gap: 16px;}
+
+    .hero {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    gap: 20px;
+    }
+    .hero_section {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .hero_txt {width: 100%;}
+    .hero_txt, .hero_txt p { text-align: left;}
+    .hero_img {display: block;margin-left: -50%;}
+    
+    .supercharge_boxes {display: flex;}
+    .supercharge_boxes {padding: 0 10px;align-items: center;}
+
+    .clients{display:flex;justify-content: space-evenly;flex-wrap: wrap;}
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul.footer_links {
+        list-style: none;
+        columns: 3;
+        align-self: center;
+    }
+    li.footer_link {padding: 10px;}
 }
