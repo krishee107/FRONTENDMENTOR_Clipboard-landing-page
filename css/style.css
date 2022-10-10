@@ -59,7 +59,15 @@ h2 {
 
 
 .download_ios {background: var(--primary);}
+
+.download_ios:hover {
+    background: hsl(171deg 66% 44% / 69%);
+}
 .download_mac {background-color: var(--primary2);}
+
+.download_mac:hover {
+    background: hsl(233deg 100% 69% / 75%);
+}
 
 /* -- Header -- */
 main {display: flex;flex-direction: column;align-items: center;text-align: center;padding: 125px 32px 0 32px;}
@@ -117,6 +125,11 @@ footer {
 ul.footer_links {
     list-style: none;
     padding: 0;
+}
+
+.footer_link:hover {
+    cursor: pointer;
+    color: var(--primary);
 }
 .footer_redes {
     display: flex;
