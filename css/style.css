@@ -136,6 +136,8 @@ ul.footer_links {
     justify-content: space-between;
     padding: 50px 0;
     cursor: pointer;
+    align-items: center;
+    gap: 10px;
 }
 
 @media (min-width:375px) {
